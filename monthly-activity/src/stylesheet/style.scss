@@ -1,0 +1,79 @@
+@import 'reset';
+@import 'global';
+
+.header {
+  background-color: teal;
+  text-align: center;
+  padding: 0.4rem 0;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+}
+.input-div {
+  text-align: center;
+}
+.input-div .input {
+  width: 30%;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  outline: 2px solid cornflowerblue;
+  border: none;
+}
+
+.submit {
+  padding: 0.48rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+.section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 0.7rem auto;
+  background-color: rgb(242, 242, 242);
+  padding: 0.4rem 0.8rem;
+  box-shadow: 3px 3px 10px 2px rgb(137, 115, 115);
+}
+.box-30 {
+  flex: 0 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-60 {
+  flex: 0 1 60%;
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.list-item {
+  height: 50px;
+  width: 50px;
+  border: 0.3px solid rgb(123, 121, 121);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(72, 59, 59);
+  cursor: pointer;
+}
+.span {
+  text-align: right;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+#active {
+  background-color: black;
+  color: white;
+}

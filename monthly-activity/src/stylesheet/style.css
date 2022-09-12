@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Container */
+.container {
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Anchor Decoration */
+a {
+  text-decoration: none;
+}
+
+/* Image Adjust */
+.full-width {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/* Positions */
+.position-absolute {
+  position: absolute;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-fixed {
+  position: fixed;
+}
+
+.position-sticky {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.z-index-100 {
+  z-index: 100;
+}
+
+.z-index-50 {
+  z-index: 50;
+}
+
+.z-index-10 {
+  z-index: 10;
+}
+
+.z-index-1 {
+  z-index: 1;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0.35rem 1rem;
+  border-radius: 0.2rem;
+  box-sizing: border-box;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn-primary {
+  color: purple;
+  border: 1px solid purple;
+}
+
+.btn-secondary {
+  color: white;
+  background-color: purple;
+  border: 1px solid purple;
+}
+
+.body {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+* {
+  text-decoration: none;
+}
+
+.header {
+  background-color: teal;
+  text-align: center;
+  padding: 0.4rem 0;
+  margin: 1rem 2rem;
+  border-radius: 30px;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: 600;
+}
+
+.input-div {
+  text-align: center;
+}
+
+.input-div .input {
+  width: 30%;
+  padding: 0.4rem;
+  font-size: 1.3rem;
+  text-transform: capitalize;
+  outline: 2px solid cornflowerblue;
+  border: none;
+}
+
+.submit {
+  padding: 0.48rem 1rem;
+  font-size: 1.3rem;
+  border: none;
+  cursor: pointer;
+}
+
+.section {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem auto 0.7rem auto;
+  background-color: rgb(242, 242, 242);
+  padding: 0.4rem 0.8rem;
+  box-shadow: 3px 3px 10px 2px rgb(137, 115, 115);
+}
+
+.box-30 {
+  flex: 0 1 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-60 {
+  flex: 0 1 60%;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  height: 50px;
+  width: 50px;
+  border: 0.3px solid rgb(123, 121, 121);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+  color: rgb(72, 59, 59);
+  cursor: pointer;
+}
+
+.span {
+  text-align: right;
+  cursor: pointer;
+}
+
+.heading {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+#active {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
