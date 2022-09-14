@@ -3,35 +3,39 @@ import React from 'react';
 class Tracker extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
-
   render() {
-    let arr = [
-      1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21,
-      22, 23, 24, 25, 26, 27, 28, 29, 30, 31,
-    ];
+    function getDaysInMonth(year, month) {
+      return new Date(year, month, 0).getDate();
+    }
+    const date = new Date();
+    const currentYear = date.getFullYear();
+    const currentMonth = date.getMonth() + 1;
+    const daysInCurrentMonth = getDaysInMonth(currentYear, currentMonth);
 
- 
-
+    let arr = [];
+    for (let i = 1; daysInCurrentMonth >= i; i++) {
+      arr.push(i);
+    }
 
     let str = '';
     str += new Date();
     let value = str.split(' ')[1];
+
+    let { data, index, add, clickFn } = this.props;
+
     return (
       <>
         <section className='section'>
           <div className='box-30'>
             <h2 className='heading'>
-              {this.props.data} <br></br> {value}
+              {data.task} <br />
+              <br /> {value}
             </h2>
           </div>
           <div className='box-60'>
             <div className='span'>
-              <span
-                className='span'
-                onClick={() => this.props.clickFn(this.props.index)}
-              >
+              <span className='span' onClick={() => clickFn(index)}>
                 ❌{' '}
               </span>
             </div>
@@ -41,10 +45,10 @@ class Tracker extends React.Component {
                   <li
                     key={elm}
                     className='list-item'
-                    id={this.props.date.includes(elm)? "active" : ""}
-                    onClick={() => this.props.add(elm)}
+                    id={data.dates?.includes(elm) ? 'active' : ' '}
+                    onClick={(e) => add(e, elm, data.task ) }
                   >
-                    {elm}{' '}
+                    {elm}
                   </li>
                 );
               })}
