@@ -2,14 +2,16 @@
 @import 'global';
 
 .header {
-  background-color: teal;
+  // background-color: teal;
   text-align: center;
   padding: 0.4rem 0;
   margin: 1rem 2rem;
   border-radius: 30px;
-  font-size: 1.7rem;
+  font-size: 2.7rem;
   color: white;
   font-weight: 600;
+  color: cornflowerblue;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .input-div {
   text-align: center;
@@ -36,7 +38,7 @@
   margin: 2rem auto 0.7rem auto;
   background-color: rgb(242, 242, 242);
   padding: 0.4rem 0.8rem;
-  box-shadow: 3px 3px 10px 2px rgb(137, 115, 115);
+  box-shadow: 1px 1px 5px 0.5px cornflowerblue;
 }
 .box-30 {
   flex: 0 1 30%;
